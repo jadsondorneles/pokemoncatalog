@@ -29,3 +29,6 @@ Used because it facilitates the search and pagination of HTML elements
 
 #### Styled-Components
 Great for standardization in production. Allows you to use component-level styles in the application. They are written in a mixture of JavaScript and CSS.
+
+#### React Circular Progressbar
+Used in Circular Stats of pokémon
