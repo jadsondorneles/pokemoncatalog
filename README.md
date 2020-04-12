@@ -18,14 +18,14 @@ Runs the app in the development mode.
 
 ## Libraries Used
  
-### Axios
+#### Axios
 Used to make HTTP requests
 
-### Material UI React
+#### Material UI React
 Used in Drawer and Tabs
 
-### JPList
+#### JPList
 Used because it facilitates the search and pagination of HTML elements
 
-### Styled-Components
+#### Styled-Components
 Great for standardization in production. Allows you to use component-level styles in the application. They are written in a mixture of JavaScript and CSS.
