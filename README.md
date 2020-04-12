@@ -1,4 +1,6 @@
-<center><img src="https://raw.githubusercontent.com/jadsondorneles/pokemoncatalog/master/src/assets/images/logo.png" width="300px" height="auto" /></center>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jadsondorneles/pokemoncatalog/master/src/assets/images/logo.png" width="300px" height="auto" />
+</p>
 
 # Pokémon Catalog
 ##### Demo: https://vibrant-fermat-0b7b9a.netlify.com/
