@@ -34,10 +34,10 @@ export default function Home() {
     return (
         <Container>
             <Menu />
-            <Logo src={logo} alt="Pokémon Catalog"/>
-            <Description>Pokémon world information catalog based on <a href="https://pokeapi.co" target="_blank" rel="noopener noreferrer">PókeAPI</a></Description>
+            <Logo src={logo} alt="Pokémon Catalog" data-testid="pokeLogo"/>
+            <Description data-testid="pokeDescription">Pokémon world information catalog based on <a href="https://pokeapi.co" target="_blank" rel="noopener noreferrer">PókeAPI</a></Description>
             <Form>
-                <SearchButton onClick={handleSubmit}>
+                <SearchButton onClick={handleSubmit} data-testid="pokeBtnSearch">
                     <MdSearch />
                 </SearchButton>
                 <Input 
@@ -46,6 +46,7 @@ export default function Home() {
                     onKeyPress={handleKeyDown}
                     onChange={(e) => setSearch(e.target.value) } 
                     placeholder="Enter the name of a Pokémon"
+                    data-testid="pokeInput"
                 />
                 {
                     validation
@@ -55,7 +56,7 @@ export default function Home() {
                         null
                 }
             </Form>
-            <DeveloperBy>Developed By Jadson A. Dorneles <a href="https://github.com/jadsondorneles" target="_blank" rel="noopener noreferrer"><GoMarkGithub /></a></DeveloperBy>
+            <DeveloperBy data-testid="pokeDev">Developed By Jadson A. Dorneles <a href="https://github.com/jadsondorneles" target="_blank" rel="noopener noreferrer"><GoMarkGithub /></a></DeveloperBy>
         </Container>
     )
 }
