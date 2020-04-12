@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/jadsondorneles/pokemoncatalog/master/src/assets/images/logo.png" width="300px" height="auto" />
+<center><img src="https://raw.githubusercontent.com/jadsondorneles/pokemoncatalog/master/src/assets/images/logo.png" width="300px" height="auto" /></center>
 
 # Pokémon Catalog
 ##### Demo: https://vibrant-fermat-0b7b9a.netlify.com/
@@ -11,10 +11,10 @@ Pokémon world information catalog based on PókeAPI
 First install NodeJS according to your O.S
 Once installed open the directory in the terminal or vscode and run the following command
 
-### `npm install --save`
+###### `npm install --save`
 
 Runs the app in the development mode.
-### `npm start`
+###### `npm start`
 
 ## Libraries Used
  
