@@ -53,6 +53,16 @@ export default function Catalog() {
             })
     }
 
+    function checkImage(imageSrc) {
+        var img = new Image();        
+        try {
+            img.src = imageSrc;
+            return imageSrc;
+        } catch(err) {
+            return logo;
+        }    
+    }
+
     useEffect(() => {
         pokemonsResult()
     }, [])
@@ -104,7 +114,8 @@ export default function Catalog() {
                                                         pokemon.results.map((result, i) => (
                                                             <PokeListItem key={i} data-jplist-item>
                                                                 <Link to={`/Pokemon/${result.url.replace('https://pokeapi.co/api/v2/pokemon/','').replace('/','')}`}>
-                                                                    <PokeListItemImage src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${result.url.replace('https://pokeapi.co/api/v2/pokemon/','').replace('/','')}.png`} alt={result.name} />
+                                                                    {/* <PokeListItemImage src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${result.url.replace('https://pokeapi.co/api/v2/pokemon/','').replace('/','')}.png`} alt={result.name} /> */}
+                                                                    <PokeListItemImage src={checkImage(`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${result.url.replace('https://pokeapi.co/api/v2/pokemon/','').replace('/','')}.png`)} alt={result.name} />
                                                                     <PokeListItemName className="pokemon">{result.name}</PokeListItemName>
                                                                 </Link>
                                                             </PokeListItem>
