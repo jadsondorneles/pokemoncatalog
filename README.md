@@ -13,7 +13,7 @@ Pokémon world information catalog based on PókeAPI
 First install NodeJS according to your O.S
 Once installed open the directory in the terminal or vscode and run the following command
 
-###### `npm install --save`
+###### `npm install`
 
 Runs the app in the development mode.
 ###### `npm start`
