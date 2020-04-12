@@ -1,0 +1,187 @@
+/************************************************************************
+Pokémon Catalog
+Year: 2020
+Author: Jadson Aires Dorneles
+*************************************************************************/
+@import './assets/css/normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,423;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,423;1,500;1,600;1,700&display=swap');
+
+:root {
+  --primary: #f22036;
+  --secundary: #fcd578;
+  --white: #ffffff;
+  --black: #303030;       
+  --red: #f22036;
+  --grey: #4d4d4d;
+  --lightgrey: #cdcdcd;
+  --green: #4caf50;
+  --orange: #ff9800;
+  --yellow: #ffc107;
+  --brown: #795548;
+  --purple: #923f82;
+  --blue: #00329c;
+  --font-regular: 'Comic Neue', cursive;
+  --font-secondary: 'Josefin Sans', cursive;
+}
+
+body, html, #root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--white);
+}
+
+body,
+a,
+p,
+h1,
+h2,
+h4,
+h4,
+h5,
+h6,
+button,
+div,
+span,
+.MuiTypography-body1 {
+  font-family: var(--font-regular), sans-serif;
+  outline: none !important;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+
+.PrivateTabIndicator-colorPrimary-65 {}
+
+.MuiTabs-indicator {
+    background: transparent !important;
+}
+
+.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected.MuiTab-fullWidth {
+  background: var(--primary);
+  border-radius: 100px;
+  color: var(--white);
+  font-family: var(--font-secondary) !important;
+  font-weight: 800;
+  min-width: 132px;
+  min-height: 0;
+  padding: 0 44px;
+}
+
+header.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorDefault {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0), 0px 4px 5px 0px rgba(0,0,0,0), 0px 1px 10px 0px rgba(0,0,0,0);
+  background: transparent;
+}
+
+span.MuiTab-wrapper {
+    font-family: var(--font-secondary) !important;
+    padding: 0;
+}
+
+.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.MuiTab-fullWidth {
+    border-radius: 100px;
+}
+
+div#TabPanel {
+  height: 256px;
+  overflow: auto;
+}
+
+#TabPanelStats {
+  height: 136px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 105px 20px 20px 20px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: lightgrey;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: lightgrey;
+}
+
+::placeholder {
+  color: lightgrey;
+}
+
+#rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+  border: 1px solid transparent;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 420px) {
+  .MuiTabs-flexContainer {
+    display: grid !important;
+  }
+}
+
+@media (max-width: 820px) {
+  div#root {
+      align-items: baseline;
+  }
+
+  div#TabPanel, #TabPanelStats  {
+    /* height: auto; */
+  }
+
+  div#TabPanelStats {
+      padding: 0;
+  }
+}
+
