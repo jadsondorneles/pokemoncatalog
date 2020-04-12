@@ -280,7 +280,6 @@ export default function Pokemon({ match }) {
                                     >
 
                                         <TabPanel id="TabPanel" value={value} index={0} dir={theme.direction}>
-                                            {/* <h2>ABILITY</h2> */}
                                             {
                                                 ability.map((ability, i) => (
                                                     <PokeAbility id="PokeAbility" key={i}>
@@ -306,7 +305,6 @@ export default function Pokemon({ match }) {
                                         </TabPanel>
 
                                         <TabPanel id="TabPanel" value={value} index={1} dir={theme.direction}>
-                                            {/* <h2>FORMS</h2> */}
                                             {
                                                 forms.map((form, i) => (
                                                     form.form_names.length === 0
@@ -349,7 +347,6 @@ export default function Pokemon({ match }) {
                                         </TabPanel>
 
                                         <TabPanel id="TabPanelStats" value={value} index={2} dir={theme.direction}>
-                                            {/* <h2>STATS</h2> */}
                                             <PokeStat id="PokeStat">
                                                 {
                                                     results.map((poke, i) => (
@@ -369,7 +366,6 @@ export default function Pokemon({ match }) {
                                         </TabPanel>
 
                                         <TabPanel id="TabPanel" value={value} index={3} dir={theme.direction}>
-                                            {/* <h2>EVOLUTIONS</h2> */}
                                             {
                                                 evolutions.map((evolution, i) => (
                                                     <PokeEvolution key={i}>
@@ -408,35 +404,7 @@ export default function Pokemon({ match }) {
 
                                     </SwipeableViews>
                                 </PokeTab>
-
-                                
-
-                                
-
-                                
-
-                                {/* {
-                                    evolutions.map((evolution, i) => (
-                                        <div key={i}>
-                                        <p><img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${evolution.chain.species.url.replace('https://pokeapi.co/api/v2/pokemon-species/','').replace('/','')}.png`} alt={evolution.chain.species.name}/><b>{evolution.chain.species.name}</b></p>
-                                        {
-                                            evolution.chain.evolves_to.map((evolves_to, i) => (
-                                                <div key={i}>
-                                                <p key={i}><img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${evolves_to.species.url.replace('https://pokeapi.co/api/v2/pokemon-species/','').replace('/','')}.png`} alt={evolves_to.species.name} /> <b>{evolves_to.species.name}</b></p>
-                                                {
-                                                    evolves_to.evolves_to.map((evolves_to_, i) => (
-                                                        <p key={i}><img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${evolves_to_.species.url.replace('https://pokeapi.co/api/v2/pokemon-species/','').replace('/','')}.png`} alt={evolves_to_.species.name} /> <b>{evolves_to_.species.name}</b></p>
-                                                    ))
-                                                }
-                                                </div>
-                                            ))
-                                        }
-                                        </div>
-                                    ))
-                                } */}
-                                
                             </>
-
                 }
             </PokeInformation>
             

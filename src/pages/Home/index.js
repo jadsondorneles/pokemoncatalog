@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
 import { MdSearch } from 'react-icons/md'
-import { GoMarkGithub } from "react-icons/go";
+import { GoMarkGithub } from "react-icons/go"
 
 import Container from '../../components/Container/index'
 import Menu from '../../components/Menu/index'
