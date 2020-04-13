@@ -77,7 +77,7 @@ export default function Catalog() {
                             <PokeError src={pokeerror} />
                             <PokeErrorText>Sorry, an error occurred</PokeErrorText>
                             <PokeErrorText>Please access or button below and search for another Pokémon</PokeErrorText>
-                            <a href="/">Search New Pokémon</a>
+                            <a href="https://vibrant-fermat-0b7b9a.netlify.com/">Search New Pokémon</a>
                         </PokeErrorBox>
                     :
                         <>
