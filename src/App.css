@@ -197,3 +197,7 @@ div#TabPanel {
 ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(255,0,0,0.4); 
 }
+
+.MuiPaper-root.MuiDrawer-paper.MuiDrawer-paperAnchorLeft {
+  overflow: hidden;
+}
