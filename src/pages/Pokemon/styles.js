@@ -388,7 +388,7 @@ export const PokeEvolutionItem = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-start;
     border-radius: 100px;
     box-shadow: 0px 0px 16px -7px rgba(0,0,0,0.75);
     background-color: var(--blue);
