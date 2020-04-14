@@ -78,7 +78,7 @@ export default function Pokemon({ match }) {
             alert('indefinido')
         } else {
             setLoading(true)
-            await api.get(`/api/v2/pokemon/${match.params.search}`)
+            await api.get(`/api/v2/pokemon/${match.params.search.toLowerCase()}`)
                 .then(response => {
                     const data = []
                     data.push(response.data)
